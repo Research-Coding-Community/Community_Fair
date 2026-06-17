@@ -10,10 +10,10 @@ directly on GitHub Pages without a build step.
 
 - `index.html` - single-page event website.
 - `styles.css` - RCC-inspired styling using the colours from the event resources.
-- `app.js` - small script that highlights the active navigation section and runs the photo carousel.
+- `app.js` - small script that runs the photo carousel.
 - `site-assets/` - web-ready copies of the poster, gallery image, People Bingo, and token.
+- `Images/` - event images used by the website, including the organising committee photo and gallery.
 - `Resources/` - original event artwork, grouped into posters, games, and tokens.
-- `Gallery/` - original event photography.
 - `.github/workflows/deploy.yml` - GitHub Pages deployment workflow.
 
 ## Sections
@@ -26,6 +26,7 @@ The page is organised as:
 - Stands
 - Photos
 - Event materials
+- Organising Committee
 - Review and lessons learnt
 
 The navigation buttons at the top link to each section of the same page. The
@@ -40,7 +41,7 @@ and grouped into:
 - `Resources/posters/` - stand signs and event posters.
 - `Resources/games/` - People Bingo and stamp-card printouts.
 - `Resources/tokens/` - numbered fair tokens.
-- `Gallery/` - original gallery images.
+- `Images/` - organising committee and gallery images.
 - `site-assets/` - smaller web-ready image versions used by the site.
 
 All grouped resources are linked as downloads from the Event Materials section
@@ -81,7 +82,6 @@ changes.
 
 When adding more gallery images:
 
-1. Add the original image to `Gallery/`.
-2. Create a smaller web-ready copy in `site-assets/`.
-3. Add a new carousel `<figure>` in the Photos section of `index.html`.
-4. Include descriptive alt text and a concise caption.
+1. Add the image to `Images/Gallery/`.
+2. Add a new carousel `<figure>` in the Photos section of `index.html`.
+3. Include descriptive alt text and a concise caption.
